@@ -9,11 +9,40 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
+    border: 1px black;
+    padding: 20px;
+    gap: 30px;
 }
 header img{
     height: 100px;
     width: 100px;
 }
+header .search{
+    border: 2px solid #e2e2e2;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header .search img{
+    height: 25px;
+    width: 25px;
+}
+header .search .lupa{
+    height: 23px;
+    width: 23px;
+}
 header .barra{
-    height: 100px;
+    height: 30px;
+    width: 60%;
+    border: white;
+    border-right: 1px solid black;
+}
+header .gps{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 0px gray;
+    height: 23px;
 }
