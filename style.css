@@ -5,6 +5,7 @@
 }
 
 header{
+    font-family: 'Inter', sans-serif;
     width: 100%;
     height: 100px;
     display: flex;
@@ -12,6 +13,7 @@ header{
     border: 1px black;
     padding: 20px;
     gap: 30px;
+    white-space: nowrap;
 }
 header img{
     height: 100px;
@@ -43,6 +45,69 @@ header .gps{
     display: flex;
     align-items: center;
     padding: 15px;
-    box-shadow: 0px 0px 0px gray;
     height: 23px;
 }
+header .icons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+header .icons img{
+    height: 30px;
+    width: 30px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+header .icon{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+header .icon:hover{
+    
+    color: #ea52ea;
+}
+header .buttons{
+    display: flex;
+    gap: 20px;
+}
+header .buttons .entrar{
+    height: 40px;
+    width: 110px;
+    border-radius: 20px; 
+    border: 1px solid gray;
+    background-color: inherit;
+}
+header .buttons .entrar:hover{
+    color: #ea52ea;
+    border: 1px solid #ea52ea;
+    transition: scale();
+}
+
+header .buttons .anuncio{
+    height: 40px; 
+    width: 130px;
+    border-radius: 20px;
+    background-color: #fb9520;
+    border: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 3px;
+}
+header .buttons img{
+    height: 25px;
+    width: 25px;
+}
+header .buttons .anuncio:hover{
+    background-color: #d37f1f;
+    transition: scale();
+} 
