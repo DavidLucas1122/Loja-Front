@@ -7,24 +7,28 @@
 header{
     font-family: 'Inter', sans-serif;
     width: 100%;
-    height: 100px;
+    height: 81px;
     display: flex;
     align-items: center;
-    border: 1px black;
-    padding: 20px;
-    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 40px;
     white-space: nowrap;
+    justify-content: center;
+    border-bottom: 1px solid rgb(221, 219, 219);
 }
 header img{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 header .search{
     border: 2px solid #e2e2e2;
     height: 60%;
+    width: 35%;
     display: flex;
     align-items: center;
     padding: 10px;
+    border-radius: 5px;
 }
 
 header .search img{
@@ -36,8 +40,8 @@ header .search .lupa{
     width: 23px;
 }
 header .barra{
-    height: 30px;
-    width: 60%;
+    height: 25px;
+    width: 81%;
     border: white;
     border-right: 1px solid black;
 }
@@ -47,6 +51,8 @@ header .gps{
     padding: 15px;
     height: 23px;
 }
+
+
 header .icons{
     padding: 10px;
     display: flex;
@@ -54,14 +60,19 @@ header .icons{
     justify-content: center;
     gap: 1rem;
 }
+ /* ARRUMAR HOVER ICON 
+header .icon:hover{
+
+} */
+
 header .icons img{
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
 }
 header a{
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
 header .icon{
     display: flex;
@@ -70,13 +81,10 @@ header .icon{
     justify-content: center;
     gap: 3px;
 }
-header .icon:hover{
-    
-    color: #ea52ea;
-}
 header .buttons{
     display: flex;
     gap: 20px;
+    font-size: 0.9rem;
 }
 header .buttons .entrar{
     height: 40px;
@@ -95,7 +103,7 @@ header .buttons .anuncio{
     height: 40px; 
     width: 130px;
     border-radius: 20px;
-    background-color: #fb9520;
+    background-color: #ffa33a;
     border: inherit;
     color: white;
     display: flex;
@@ -108,6 +116,76 @@ header .buttons img{
     width: 25px;
 }
 header .buttons .anuncio:hover{
-    background-color: #d37f1f;
+    background-color: #e08b29;
     transition: scale();
-} 
+}
+/* Main */
+
+main{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+}
+main .container{
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+    gap: 20px;
+
+}
+main .caixa1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .caixa2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .id{
+    text-align: start;
+}
+main .nome{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+main .card {
+    border: 1px solid rgb(221, 219, 219);
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    
+}
+
+main .card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #ea52ea;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+main .card img {
+    height: 220px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+main .card img:hover {
+    transform: scale(1.05);        /* aumenta suavemente */
+}
