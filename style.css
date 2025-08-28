@@ -43,7 +43,7 @@ header .search .lupa{
 }
 header .barra{
     height: 100%;
-    width: 81%;
+    width: 90%;
     background-color: none;
     border: none;
     outline: none;
@@ -82,8 +82,8 @@ header .icon:hover{
 }
 
 header .icons img{
-    height: 22px;
-    width: 22px;
+    height: 1.3rem;
+    width: 1.3rem;
 }
 header a{
     text-decoration: none;
@@ -136,6 +136,25 @@ header .buttons .anuncio:hover{
     transition: scale();
 }
 
+.icons-menores{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    justify-content: center;
+}
+.icons-menores .icon{
+    display: flex;
+    background-color: rgb(238, 234, 234);
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+}
+.icons-menores .icon:hover{
+    transform: translateY(-5px);
+    border: 2px solid rgb(238, 234, 234);
+}
+
 /* Main */
 
 main{
@@ -182,14 +201,14 @@ main .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 25em;
     gap: 10px;
     text-align: center;
 }
 
 main .card:hover {
     transform: translateY(-5px);
-    border: 1px solid #ea52ea;
+    border: 2px solid #ea52ea;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
 }
 
