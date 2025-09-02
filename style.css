@@ -145,14 +145,23 @@ header .buttons .anuncio:hover{
 }
 .icons-menores .icon{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(238, 234, 234);
     height: 50px;
     width: 90px;
     border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    gap: 5px;
 }
 .icons-menores .icon:hover{
     transform: translateY(-5px);
     border: 2px solid rgb(238, 234, 234);
+}
+.icons-menores .icon img{
+    width: 20px;
+    height: 20px;
 }
 
 /* Main */
