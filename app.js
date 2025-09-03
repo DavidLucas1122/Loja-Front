@@ -76,9 +76,13 @@ produtos.forEach((produto, index) => {
   estrelas.classList.add('estrelas')
   estrelas.textContent = '★'.repeat(produto.classificacao) + '☆'.repeat(5 - produto.classificacao)
 
+  card.addEventListener("click", () => {
+    alert(`Você clicou em: ${produto.nome}`)
+  })
 
 
 
   card.append(img, nome, preco, descricao, estrelas)
   grupoDiv.appendChild(card)
 })
+
