@@ -75,11 +75,6 @@ header .icons{
     font-size: 15px;
 }
 
-
-header .icons img{
-    height: 1.3rem;
-    width: 1.3rem;
-}
 header a{
     text-decoration: none;
     color: black;
@@ -243,22 +238,31 @@ main .card img:hover {
     transform: scale(1.2);
   }
 
+
+/* Arrumar SVGS */
   .icon-svg {
     width: 28px;
     height: 28px;
     transition: color 0.3s;
-    stroke: #6b21a8;
+    stroke: #000000;
     stroke-width: 1.5;
     fill: none;
 }
+.icon-svg-square {
+    width: 28px;
+    height: 28px;
+    transition: color 0.3s;
+    stroke: #000000;
+    stroke-width: 4;
+    fill: none;
+}
+.icon-svg-square:hover{
+    stroke: #aa05aa;
+}
   
   .icon-svg:hover {
-    color: #2563eb; /* cor ao passar o mouse */
+    stroke: #aa05aa; /* cor ao passar o mouse */
   }
-  
-  .icon {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  .icon a:hover{
+    color: #aa05aa;
   }
-  
